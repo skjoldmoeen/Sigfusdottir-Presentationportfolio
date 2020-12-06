@@ -1,0 +1,174 @@
+*{
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+
+.grid-container{
+  display; grid;
+  grid-template-areas:
+  'header '
+  'quote'
+  'img1'
+  'portfolio'
+  'concept'
+  'img2'
+  'divider'
+  'img3'
+  'about'
+  'navi' ;
+  grid-row-gap: 0px;
+}
+
+.grid-container > div{
+
+
+}
+
+.header{
+  grid-area: header;
+  background-color: #F9F6F0;
+  height: 16vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav{
+  grid-area:navi;
+  background-color: #F9F6F0;
+
+}
+.quote{
+  grid-area: quote;
+  background-color: #FFEAEA;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.quote p{
+  padding: 0em 2em 2em 2em;
+  color:#7192BE
+}
+
+
+.img1{
+background-color: #F9F6F0;
+}
+
+.box{
+  background-color: #FF999B;
+  width: 70vw;
+  height: 40vh;
+  margin: 0em 3em 4em 3em;
+}
+
+.portfolio{
+  grid-area: portfolio;
+  background-color: #DB7575;
+
+}
+.concept{
+  grid-area: concept;
+  background-color: #FFEAEA;
+}
+.img2{
+  grid-area: img2;
+  background-color: #F9F6F0;
+}
+.divider{
+  grid-area: divider;
+  background-color: #DB7575;
+  height: 100px;
+}
+.img3{
+  grid-area: img3;
+  background-color: #F9F6F0;
+}
+.about{
+  grid-area: about;
+  background-color: #FFEAEA;
+}
+.footer{
+  grid-area:footer;
+  background-color: #DB7575;
+  height: 100px;
+}
+
+
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #FFEAEA;
+
+
+
+}
+.nav-link {
+  color: #DB7575;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nav-links{
+  overflow:hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  padding: 3%;
+
+}
+.logo {
+
+  height: 80px;
+
+
+}
+a:hover,h1:hover{
+  color: #EDAE49;
+}
+h1{
+  color: #DB7575;
+  text-align: center;
+}
+.citat{
+  font-family: delicato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  color: #7192BE;
+  text-align: center;
+  padding: 1em 2em 1em 2em;
+  }
+
+.overskrifter{
+  font-family: delicato, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  padding: 4%;
+  color:#7192BE;
+}
+.portfol{
+  font-family: delicato, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  padding: 4%;
+  color: #FFEAEA;
+}
+
+p{
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

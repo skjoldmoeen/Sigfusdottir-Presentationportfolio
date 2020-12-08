@@ -1,21 +1,13 @@
 *{
-
+  height: 100%;
   margin:0;
   padding: 0;
 }
-body{
-  padding-bottom: 60px;
-}
-p{
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .grid-container{
-  display: block;
+  display; grid;
   grid-template-areas:
-  'header'
+  'header '
   'quote'
   'img1'
   'portfolio'
@@ -28,6 +20,10 @@ p{
   grid-row-gap: 0px;
 }
 
+.grid-container > div{
+
+
+}
 
 .header{
   grid-area: header;
@@ -37,13 +33,14 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .nav{
   grid-area:navi;
   background-color: #F9F6F0;
 
 }
-.pinkbox{
+.quote{
   grid-area: quote;
   background-color: #FFEAEA;
   text-align: center;
@@ -53,7 +50,7 @@ p{
   align-items: center;
   height: 30vh;
 }
-.pinkbox p{
+.quote p{
   padding: 0em 2em 2em 2em;
   color:#7192BE
 }
@@ -61,21 +58,13 @@ p{
 
 .img1{
 background-color: #F9F6F0;
-height: 100vw;
-width:100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-}
-.centerimage{
-  width: 70%;
-  height: auto;
 }
 
 .box{
-
+  background-color: #FF999B;
+  width: 70vw;
+  height: 40vh;
+  margin: 0em 3em 4em 3em;
 }
 
 .portfolio{
@@ -83,16 +72,9 @@ align-items: center;
   background-color: #DB7575;
 
 }
-.regular{
-  background-color: #FFEAEA;
-
-}
 .concept{
-  grid-area: "concept";
-}
-.about{
-  grid-area: about;
-
+  grid-area: concept;
+  background-color: #FFEAEA;
 }
 .img2{
   grid-area: img2;
@@ -107,7 +89,9 @@ align-items: center;
   grid-area: img3;
   background-color: #F9F6F0;
 }
-
+.about{
+  grid-area: about;
+  background-color: #FFEAEA;
 }
 .footer{
   grid-area:footer;
@@ -122,8 +106,10 @@ nav ul{
   justify-content: space-around;
   text-align: center;
   background-color: #FFEAEA;
-}
 
+
+
+}
 .nav-link {
   color: #DB7575;
   text-decoration: none;
@@ -131,23 +117,21 @@ nav ul{
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 2px;
 }
-
 .nav-links{
   overflow:hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 5%;
-  padding-top:6%;
+  padding: 3%;
 
 }
 .logo {
+
   height: 80px;
-}
-.logoimg{
-  height: 100%;
+
+
 }
 a:hover,h1:hover{
   color: #EDAE49;
@@ -181,4 +165,10 @@ h1{
   text-align: center;
   padding: 4%;
   color: #FFEAEA;
+}
+
+p{
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

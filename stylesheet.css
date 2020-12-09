@@ -1,16 +1,76 @@
 *{
-
   margin:0;
   padding: 0;
 }
+
+/*text formatting*/
 body{
   padding-bottom: 60px;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+h1{
+  color: #DB7575;
+  text-align: center;
+  font-family: delicato, sans-serif;
+  font-weight: 900;
+  font-style: normal
+}
+.quote{
+  font-family: delicato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  color: #7192BE;
+  text-align: center;
+  padding: 1em 2em 1em 2em;
+}
+
+.blueheadline{
+  font-family: delicato, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  padding: 4%;
+  color:#7192BE;
+}
+.beigeheadline{
+  font-family: delicato, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  padding: 4%;
+  color: #FFEAEA;
+}
+a:hover,h1:hover{
+  color: #EDAE49;
 }
 p{
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  padding: 0em 2em 2em 2em;
+  color:#7192BE;
 }
+/*images*/
+
+.imgcontainer{
+background-color: #F9F6F0;
+height: 100vw;
+width:100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.centerimage{
+  width: 70%;
+  height: auto;
+}
+
+
+/*grid*/
 
 .grid-container{
   display: block;
@@ -22,13 +82,13 @@ p{
   'concept'
   'img2'
   'divider'
-  'img3'
   'about'
+  'img3'
   'navi' ;
   grid-row-gap: 0px;
 }
 
-
+/*Header*/
 .header{
   grid-area: header;
   background-color: #F9F6F0;
@@ -38,13 +98,48 @@ p{
   justify-content: center;
   align-items: center;
 }
+.logo {
+  height: 80px;
+}
+.logoimg{
+  height: 100%;
+}
+
+/*Navigation*/
 .nav{
   grid-area:navi;
   background-color: #F9F6F0;
-
 }
-.pinkbox{
-  grid-area: quote;
+  nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #FFEAEA;
+  }
+
+  .nav-link {
+    color: #DB7575;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2px;
+  }
+
+  .nav-links{
+    overflow:hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    padding-top:6%;
+
+  }
+
+/*Maincontent*/
+.regular{
   background-color: #FFEAEA;
   text-align: center;
   display: flex;
@@ -53,132 +148,33 @@ p{
   align-items: center;
   height: 30vh;
 }
-.pinkbox p{
-  padding: 0em 2em 2em 2em;
-  color:#7192BE
-}
-
-
-.img1{
-background-color: #F9F6F0;
-height: 100vw;
-width:100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+.quotesection{
+  grid-area: quote;
 
 }
-.centerimage{
-  width: 70%;
-  height: auto;
-}
-
-.box{
-
-}
-
 .portfolio{
   grid-area: portfolio;
   background-color: #DB7575;
-
 }
-.regular{
-  background-color: #FFEAEA;
 
-}
 .concept{
-  grid-area: "concept";
+  grid-area: concept;
 }
+
 .about{
   grid-area: about;
 
 }
-.img2{
-  grid-area: img2;
-  background-color: #F9F6F0;
-}
+/*Divider*/
 .divider{
   grid-area: divider;
   background-color: #DB7575;
   height: 100px;
 }
-.img3{
-  grid-area: img3;
-  background-color: #F9F6F0;
-}
 
-}
+/*footer*/
 .footer{
   grid-area:footer;
   background-color: #DB7575;
   height: 100px;
-}
-
-
-nav ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  text-align: center;
-  background-color: #FFEAEA;
-}
-
-.nav-link {
-  color: #DB7575;
-  text-decoration: none;
-  vertical-align: middle;
-  font-family: montserrat, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding: 2px;
-}
-
-.nav-links{
-  overflow:hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 5%;
-  padding-top:6%;
-
-}
-.logo {
-  height: 80px;
-}
-.logoimg{
-  height: 100%;
-}
-a:hover,h1:hover{
-  color: #EDAE49;
-}
-h1{
-  color: #DB7575;
-  text-align: center;
-}
-.citat{
-  font-family: delicato, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 30px;
-  color: #7192BE;
-  text-align: center;
-  padding: 1em 2em 1em 2em;
-  }
-
-.overskrifter{
-  font-family: delicato, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  padding: 4%;
-  color:#7192BE;
-}
-.portfol{
-  font-family: delicato, sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  padding: 4%;
-  color: #FFEAEA;
 }
